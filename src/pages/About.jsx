@@ -25,10 +25,10 @@ function About() {
             <section className="about">
                 <Banner image={imageBanner} />
                 <div className="about__dropdowns">
-                    <Collapse title="fiabilité" description={description("fiability")} />
-                    <Collapse title="respect" description={description("respect")} />
-                    <Collapse title="service" description={description("service")} />
-                    <Collapse title="sécurité" description={description("sécurity")} />
+                    <Collapse title="Fiabilité" description={description("fiability")} />
+                    <Collapse title="Respect" description={description("respect")} />
+                    <Collapse title="Service" description={description("service")} />
+                    <Collapse title="Sécurité" description={description("sécurity")} />
                 </div>
             </section>
         </main>

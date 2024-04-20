@@ -32,7 +32,6 @@
         font-size: 13px;
         font-weight: 700;
         line-height: 19px;
-        text-transform: capitalize;
 
         @include media-query(small) {
             height: 40px;

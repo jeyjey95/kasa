@@ -5,8 +5,8 @@ import Logo from "../assets/logo.svg";
 const Navigation = () => {
   return (
     <section className="header">
-    <nav className="navbar">
-      
+      <nav className="navbar">
+
         <NavLink to="/">
           <img src={Logo} alt="Logo" className="navbar__img" />
         </NavLink>
@@ -18,8 +18,8 @@ const Navigation = () => {
             A Propos
           </NavLink>
         </div>
-      
-    </nav>
+
+      </nav>
     </section>
   );
 };

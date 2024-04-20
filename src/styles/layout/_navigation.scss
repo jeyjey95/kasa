@@ -7,7 +7,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   margin: 0;
 
   &__links {
@@ -42,12 +41,10 @@
 
       @include media-query(small) {
         font-size: 20px;
-
       }
 
       @include media-query(medium) {
         font-size: 20px;
-
       }
 
       @include media-query(large) {
