@@ -1,0 +1,59 @@
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 5%;
+
+  @include media-query(large) {
+    margin-top: 0%;
+  }
+
+  &__logo {
+    font-size: 96px;
+    color: $primary-color;
+    font-weight: 700;
+    margin: auto;
+
+    @include media-query (medium) {
+      font-size: 150px;
+    }
+
+    @include media-query(large) {
+      font-size: 288px;
+    }
+
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 18px;
+    color: $primary-color;
+    font-weight: 500;
+
+    @include media-query(small) {
+      font-size: 18px;
+    }
+
+    @include media-query (medium) {
+      font-size: 30px;
+    }
+
+    @include media-query(large) {
+      font-size: 36px;
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+    color: $black;
+    margin: 42px 0px 80px;
+    text-decoration: underline;
+    font-weight: 500;
+
+    @media only screen and (max-width:375px) {
+      font-size: 14px;
+    }
+  }
+}

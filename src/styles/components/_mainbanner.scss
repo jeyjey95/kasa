@@ -1,0 +1,56 @@
+.homeBanner {
+  width: 100%;
+  min-height: 100px;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  animation: fadeIn 500ms ease-in-out;
+
+  &__title {
+    display: flex;
+    position: absolute;
+    justify-items: center;
+    align-self: center;
+    font-size: 48px;
+    font-weight: 300;
+    color: $white;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 5%;
+    box-sizing: inherit;
+
+    @include media-query(small) {
+      padding: 5%;
+      font-size: 24px;
+    }
+
+    @include media-query(medium) {
+      font-size: 35px;
+    }
+
+    @include media-query(large) {
+      font-size: 48px;
+      white-space: nowrap;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+
+  }
+}
+
+.thunb__img {
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+  border-radius: inherit;
+}

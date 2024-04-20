@@ -1,0 +1,27 @@
+@mixin media-query($key) {
+  $size: map-get($breakpoints, $key);
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+$primary-color: #ff6060;
+$light-grey: #f7f7f7;
+$black: black;
+$white: #fff;
+$font-1: "font-1", sans-serif;
+
+$breakpoints: (
+  small: 375px,
+  medium: 768px,
+  large: 992px,
+  xlarge: 1240px,
+  xxlarge:1440px,
+);
+
+   
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
