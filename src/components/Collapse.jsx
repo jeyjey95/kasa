@@ -11,10 +11,18 @@ function Collapse({ title, description, equipements }) {
     //Definie la fonction createRef de react dans la constante collapse
     const collapse = createRef();
 
+    if (activated) {
+        var arrow = "rotate collapse__arrow";
+    }
+    else {
+        var arrow = "collapse__arrow"
+    }
+
     const setCollapse = () => {
         if (!activated) {
             setToggle({ height: collapse.current.scrollHeight, opacity: 1 });
             setActive(true);
+
         } else {
             setToggle({ height: 0, opacity: 0 });
             setActive(false);
@@ -25,7 +33,7 @@ function Collapse({ title, description, equipements }) {
         <section className="collapse">
             <button type="button" className="collapse__button" onClick={() => setCollapse()}>
                 {title}
-                <img src={Vector} alt="" className="collapse__arrow" />
+                <img src={Vector} alt="" className={arrow} />
             </button>
             <div className="collapse__content" style={toggle} ref={collapse}>
                 {Array.isArray(equipements) ? (
