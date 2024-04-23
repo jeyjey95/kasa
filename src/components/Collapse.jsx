@@ -4,7 +4,7 @@ import { createRef, useState } from 'react';
 
 function Collapse({ title, description, equipements }) {
     const [heightCollapse, setHeightCollapse] = useState({ height: 0, opacity: 0 });
-    
+
     const [class_arrow, setClass_arrow] = useState("collapse__arrow");
 
     //Definie la valeur de l'état à false à l'objet activated
@@ -30,7 +30,6 @@ function Collapse({ title, description, equipements }) {
             setHeightCollapse({ height: 0, opacity: 0 });
             setClass_arrow("collapse__arrow");
             setActive(false);
-
         }
     };
 
@@ -50,9 +49,7 @@ function Collapse({ title, description, equipements }) {
                 ) : (
                     <p className="collapse__text">{description} </p>
                 )}
-
             </div>
-
         </section>
     );
 };
